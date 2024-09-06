@@ -1,0 +1,30 @@
+hej, próbuje zrobić repo ale komenda "npm-run-all init:*" nie działa. Po wykonaniu komendy npm install jakiś paczek brakuje. Próbowałem znaleźć rozwiązanie w internecie ale z marnym skutkiem
+
+$ npm install && npm-run-all init:*
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+npm warn deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+npm warn deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+
+added 566 packages, and audited 567 packages in 9s
+
+91 packages are looking for funding
+  run `npm fund` for details
+
+13 vulnerabilities (9 moderate, 4 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+bash: npm-run-all: command not found
+
+strzelam że problem lezy tu: npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+ale nie wiem co z tym zrobić i dlaczego do tej pory wszystko działało

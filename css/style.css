@@ -1,3 +1,25 @@
+button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  border-radius: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(2px);
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNDLHlCQUFBO0VBQ0EsWUFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSwyREFBQTtFQUNBLGVBQUE7RUFDQSx3Q0FBQTtBQ0NEOztBREVBO0VBQ0MseUJBQUE7RUFDQSwyQkFBQTtBQ0NEOztBREVBO0VBQ0MseUJBQUE7RUFDQSwwQkFBQTtBQ0NEIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

@@ -2,7 +2,6 @@
 	function playgame(playerInput) {
 		clearMessages();
 
-		//const randomNumber = Math.floor(Math.random() * 3 + 1);
 		const roundingRange = 3
 		const roundingOffset = 1
 		const rounding = Math.random() * roundingRange + roundingOffset;

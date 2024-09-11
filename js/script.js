@@ -1,5 +1,4 @@
 {
-	//Ruch komputera
 	function playgame(playerInput) {
 		clearMessages();
 

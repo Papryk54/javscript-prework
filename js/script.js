@@ -2,10 +2,15 @@
 	function playgame(playerInput) {
 		clearMessages();
 
-		const randomNumber = Math.floor(Math.random() * 3 + 1);
+		//const randomNumber = Math.floor(Math.random() * 3 + 1);
+		const roundingRange = 3
+		const roundingOffset = 1
+		const rounding = Math.random() * roundingRange + roundingOffset;
+		const randomNumber = Math.floor(rounding);
+
 		console.log("Wylosowana liczba to: " + randomNumber);
 
-		//Zmiana cyferek na słowa
+		//Changing numbers to moves
 
 		const getMoveName = function (argMoveId) {
 			if (argMoveId == 1) {
@@ -26,7 +31,7 @@
 
 		const argPlayerMove = getMoveName(playerInput);
 
-		//wyświetlenie wyniku
+		//displying results
 
 		const displayResult = function (argComputerMove, argPlayerMove) {
 			printMessage("Zagrałem " + argComputerMove + ", a Ty " + argPlayerMove);
@@ -50,27 +55,27 @@
 		displayResult(argComputerMove, argPlayerMove);
 	}
 
-	const buttonClicked1 = function () {
+	const rockButton = function () {
 		playgame(1);
 	};
 
-	const buttonClicked2 = function () {
+	const paperButton = function () {
 		playgame(2);
 	};
 
-	const buttonClicked3 = function () {
+	const scissorsButton = function () {
 		playgame(3);
 	};
 
 	let rock = document.getElementById("play-rock");
 
-	rock.addEventListener("click", buttonClicked1);
+	rock.addEventListener("click", rockButton);
 
 	let paper = document.getElementById("play-paper");
 
-	paper.addEventListener("click", buttonClicked2);
+	paper.addEventListener("click", paperButton);
 
-	let scisspors = document.getElementById("play-scissors");
+	let scissors = document.getElementById("play-scissors");
 
-	scisspors.addEventListener("click", buttonClicked3);
+	scissors.addEventListener("click", scissorsButton);
 }
